@@ -1,0 +1,260 @@
+@media screen and (max-width: 720px) {
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+  }
+  .Wrap {
+    position: static;
+    height: 100%;
+    width: 100%;
+    background-image: none;
+    background-color: #1c5551;
+    background-size: 100% 100%;
+  }
+  .PageBg {
+    width: 100vw;
+    height: 100vh;
+    background-image: none;
+    background-size: 99% 97%;
+    opacity: 0.5;
+    z-index: 0;
+  }
+  .Cirque {
+    position: fixed;
+    top: 50%;
+    left: -8vh;
+    width: 140vh;
+    height: 140vh;
+    margin-top: -70vh;
+    background: url(../../Img/RevolveBg.png);
+    animation: rotate1 80s linear infinite;
+    opacity: 0.2;
+    background-size: 100% 100%;
+  }
+  .Revolve {
+    top: 50%;
+    left: -30vh;
+    width: 140vh;
+    height: 140vh;
+    margin-top: -70vh;
+    background: url(../../Img/Revolve.png);
+    animation: rotate2 80s linear infinite;
+    opacity: 0.2;
+    background-size: 100% 100%;
+  }
+  .Cogs {
+    top: 3rem;
+    right: 5rem;
+    width: 6rem;
+    height: 6rem;
+    opacity: 0.1;
+    background: url(../../Img/Cogs.png);
+    animation: rotate2 20s linear infinite;
+    background-size: 100% 100%;
+  }
+  @keyframes rotate1 {
+    form {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes rotate2 {
+    form {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-360deg);
+    }
+  }
+  .TitleBg {
+    height: 21rem;
+    margin-top: 3rem;
+    background: url('../../Img/Header.png') center no-repeat;
+    background-size: 100% 100%;
+    padding-top: 2rem;
+    position: relative;
+  }
+  .TitleBg h1 {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    font-size: 11rem;
+    color: #ffffff;
+    text-shadow: 0 0 0.2em #1b7a71, 0 0 0.2em #10e7dd;
+  }
+  .TitleBg img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: 0rem;
+    transform: translate(-50%, -50%);
+    height: 10rem;
+    width: 90%;
+    opacity: 1;
+  }
+  .Main {
+    padding: 1rem;
+    height: 500%;
+    display: flex;
+    background-color: #1c5551;
+    flex-direction: column;
+  }
+  .Main .Timeline {
+    flex: 1;
+    height: 100%;
+    background-image: none;
+    background-size: 100% 100%;
+    margin-top: 3rem;
+    position: relative;
+  }
+  .Main .Timeline h3 {
+    font-size: 10rem;
+    color: #fff;
+    text-shadow: 0.1em 0.1em 0.3em black;
+    position: absolute;
+    margin-top: 5rem;
+    top: 1.2rem;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.3rem;
+  }
+  .Main .Timeline h3 .ChartTitleBg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 80%;
+    opacity: 0.9;
+  }
+  .Main .Timeline .TimeLines {
+    margin-top: 15rem;
+    width: 100%;
+    height: 88%;
+    background-color: transparent;
+  }
+  .Main .Map {
+    position: relative;
+    flex: 1;
+    display: none;
+    background-image: none;
+    opacity: 0;
+  }
+  .Main .Map .GuiZhou {
+    width: 100%;
+    height: 30%;
+    background: transparent;
+  }
+  .Main .Charts {
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 10%;
+    width: 100%;
+    padding: 1rem;
+  }
+  .Main .Charts .Chart:nth-child(3) {
+    margin-bottom: 0;
+  }
+  .Main .Charts .Chart {
+    width: 100%;
+    flex: 1;
+    height: 100%;
+    margin-bottom: 2rem;
+    position: relative;
+    background-image: none;
+  }
+  .Main .Charts .Chart .ChartBg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 120rem;
+    height: 120rem;
+    margin-top: -60rem;
+    margin-left: -60rem;
+    background: url(../../Img/ChartBg.png);
+    animation: rotate2 40s linear infinite;
+    opacity: 0.3;
+    background-size: 100% 100%;
+  }
+  .Main .Charts .Chart .ChartBgTwo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 120rem;
+    height: 120rem;
+    margin-top: -60rem;
+    margin-left: -60rem;
+    background: url(../../Img/RevolveBg.png);
+    animation: rotate2 50s linear infinite;
+    opacity: 0.3;
+    background-size: 100% 100%;
+  }
+  .Main .Charts .Chart .ChartBgThree {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 120rem;
+    height: 120rem;
+    margin-top: -60rem;
+    margin-left: -60rem;
+    background: url(../../Img/RevolveBg.png);
+    animation: rotate2 50s linear infinite;
+    opacity: 0.3;
+    background-size: 100% 100%;
+  }
+  .Main .Charts .Chart .swiper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .Main .Charts .Chart .swiper .swiper-wrapper {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+  }
+  .Main .Charts .Chart .swiper .swiper-wrapper h3 {
+    font-size: 10rem;
+    color: #fff;
+    position: absolute;
+    text-shadow: 0.1em 0.1em 0.3em black;
+    top: 1.2rem;
+    display: block;
+    width: 100%;
+    margin-top: 5rem;
+    text-align: center;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.3rem;
+  }
+  .Main .Charts .Chart .swiper .swiper-wrapper h3 .ChartTitleBg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 70%;
+    opacity: 0.9;
+  }
+  .Main .Charts .Chart .swiper .swiper-wrapper .Gdp,
+  .Main .Charts .Chart .swiper .swiper-wrapper .Finance,
+  .Main .Charts .Chart .swiper .swiper-wrapper .Total,
+  .Main .Charts .Chart .swiper .swiper-wrapper .Patent,
+  .Main .Charts .Chart .swiper .swiper-wrapper .Revenue,
+  .Main .Charts .Chart .swiper .swiper-wrapper .Insured,
+  .Main .Charts .Chart .swiper .swiper-wrapper .Forest,
+  .Main .Charts .Chart .swiper .swiper-wrapper .Litter {
+    margin-top: 3rem;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+  }
+  .Main .Charts .Chart .swiper .swiper-wrapper .RepairBug {
+    color: transparent;
+  }
+}

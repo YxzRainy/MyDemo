@@ -1,0 +1,290 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.HideScroll::-webkit-scrollbar {
+	display: none;
+	/* 隐藏滚动条 */
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+}
+
+.Wrap {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background: url('../../Img/Bg.png') fixed no-repeat;
+	background-size: 100% 100%;
+}
+
+.PageBg {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background: url('../../Img/Panel.png') center no-repeat;
+	background-size: 99% 97%;
+	opacity: 0.5;
+	z-index: 0;
+}
+
+.Cirque {
+	position: fixed;
+	top: 50%;
+	left: -30vh;
+	width: 140vh;
+	height: 140vh;
+	margin-top: -70vh;
+	background: url(../../Img/RevolveBg.png);
+	animation: rotate1 80s linear infinite;
+	opacity: 0.2;
+	background-size: 100% 100%;
+}
+
+.Revolve {
+	position: fixed;
+	top: 50%;
+	left: -30vh;
+	width: 140vh;
+	height: 140vh;
+	margin-top: -70vh;
+	background: url(../../Img/Revolve.png);
+	animation: rotate2 80s linear infinite;
+	opacity: 0.2;
+	background-size: 100% 100%;
+}
+.Cogs {
+	position: fixed;
+	top: 3rem;
+	right: 5rem;
+	width: 6rem;
+	height: 6rem;
+	opacity: 0.1;
+	background: url(../../Img/Cogs.png);
+	animation: rotate2 20s linear infinite;
+	background-size: 100% 100%;
+}
+
+@keyframes rotate1 {
+	form {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+@keyframes rotate2 {
+	form {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(-360deg);
+	}
+}
+
+.TitleBg {
+	height: 8rem;
+	margin-top: 1rem;
+	background: url('../../Img/Header.png') center no-repeat;
+	background-size: 100% 100%;
+	padding-top: 0.5rem;
+	position: relative;
+	h1 {
+		text-align: center;
+		position: relative;
+		z-index: 2;
+		font-size: 4.2rem;
+		color: rgb(255, 255, 255);
+		text-shadow: 0 0 0.2em rgb(27, 122, 113), -0 -0 0.2em rgb(16, 231, 221);
+	}
+	img {
+		position: absolute;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		margin-top: 0.5rem;
+		transform: translate(-50%, -50%);
+		height: 10rem;
+		width: 70%;
+		opacity: 1;
+	}
+}
+.Main {
+	padding: 3rem;
+	height: 90%;
+	display: flex;
+
+	.Timeline {
+		flex: 1.45;
+		height: 100%;
+		background: url('../../Img/PanelTwo.png') center no-repeat;
+		background-size: 100% 100%;
+		margin-right: 5rem;
+		position: relative;
+		h3 {
+			font-size: 2.4rem;
+			color: rgba(32, 208, 214, 0.8);
+			position: absolute;
+			top: 1.2rem;
+			display: block;
+			width: 100%;
+			text-align: center;
+			padding: 0.2rem 0.5rem;
+			border-radius: 0.3rem;
+			.ChartTitleBg {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				height: 100%;
+				width: 80%;
+				opacity: 0.9;
+			}
+		}
+		.TimeLines {
+			margin-top: 4rem;
+			width: 100%;
+			height: 100%;
+			background-color: transparent;
+		}
+	}
+	.Map {
+		position: relative;
+		flex: 3;
+		height: 100%;
+		background: url('../../Img/PanelTwo.png') center no-repeat;
+		background-size: 100% 100%;
+		opacity: 0;
+
+		.GuiZhou {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+			background: transparent;
+		}
+	}
+	.Charts {
+		position: relative;
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		width: 25%;
+		padding: 1rem;
+		// 第三个图表
+		.Chart:nth-child(3) {
+			margin-bottom: 0;
+		}
+		.Chart {
+			width: 100%;
+			flex: 1;
+			width: 100%;
+			height: 30%;
+			margin-bottom: 2rem;
+			position: relative;
+			background: url('../../Img/PanelTwo.png') center no-repeat;
+			background-size: 100% 100%;
+
+			h2 {
+				color: aliceblue;
+				font-size: 1.9rem;
+				position: absolute;
+				top: 1rem;
+				left: 1rem;
+			}
+			.ChartBg {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				width: 14rem;
+				height: 14rem;
+				margin-top: -7rem;
+				margin-left: -7rem;
+				background: url(../../Img/ChartBg.png);
+				animation: rotate2 40s linear infinite;
+				opacity: 0.3;
+				background-size: 100% 100%;
+			}
+			.ChartBgTwo {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				width: 14rem;
+				height: 14rem;
+				margin-top: -7rem;
+				margin-left: -7rem;
+				background: url(../../Img/RevolveBg.png);
+				animation: rotate2 50s linear infinite;
+				opacity: 0.3;
+				background-size: 100% 100%;
+			}
+			.ChartBgThree {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				width: 14rem;
+				height: 14rem;
+				margin-top: -7rem;
+				margin-left: -7rem;
+				background: url(../../Img/RevolveBg.png);
+				animation: rotate2 50s linear infinite;
+				opacity: 0.3;
+				background-size: 100% 100%;
+			}
+			// 图表区域一
+			.swiper {
+				width: 100%;
+				height: 100%;
+				position: relative;
+				.swiper-wrapper {
+					width: 100%;
+					height: 100%;
+					box-sizing: border-box;
+					h3 {
+						font-size: 1.8rem;
+						color: rgba(32, 208, 214, 0.8);
+						position: absolute;
+						top: 1.2rem;
+						display: block;
+						width: 100%;
+						text-align: center;
+						padding: 0.2rem 0.5rem;
+						border-radius: 0.3rem;
+						.ChartTitleBg {
+							position: absolute;
+							left: 50%;
+							top: 50%;
+							transform: translate(-50%, -50%);
+							height: 100%;
+							width: 70%;
+							opacity: 0.9;
+						}
+					}
+					.Gdp,
+					.Finance,
+					.Total,
+					.Patent,
+					.Revenue,
+					.Insured,
+					.Forest,
+					.Litter {
+						margin-top: 3rem;
+						width: 100%;
+						height: 100%;
+						background-color: transparent;
+					}
+					// 修复前两个swiper宽度不铺满的问题
+					.RepairBug {
+						color: transparent;
+					}
+				}
+			}
+		}
+	}
+}
